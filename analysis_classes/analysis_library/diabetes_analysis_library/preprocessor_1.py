@@ -1,6 +1,8 @@
-import pandas as pd
+class Preprocessor_Remove:
 
-class preprocessor_remove:
+    def __init__(self, data):
+        self.data = data
+        self.preprocess_data_remove(self.data)
 
     def preprocess_data_remove(data):
         # Remove rows with NaN values in specific columns

@@ -1,6 +1,8 @@
-import pandas as pd
+class Preprocessor_Mean:
 
-class preprocessor_mean:
+    def __init__(self, data):
+        self.data = data
+        self.preprocess_data_mean(self.data)
 
     def preprocess_data(data):
         # Fill NaN with mean values in specific columns
