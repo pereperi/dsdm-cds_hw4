@@ -1,7 +1,7 @@
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 import pandas as pd
 
-class Transform:
+class Transform(metaclass=ABCMeta):
     def __init__(self, data):
         self.data = data
 
